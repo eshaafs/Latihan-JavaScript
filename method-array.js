@@ -33,13 +33,13 @@
 //};
 //angka.forEach(cetak);
 
-var nama = ['Esha', 'Apria', 'Fitra', 'Sajaka'];
-for(var i=0; i<nama.length; i++){
-	console.log(nama[i]);
-}
-nama.forEach(function(value,index){
-   console.log('Mahasiswa No. ' + (index + 1) + ' Adalah ' + value);
-});
+// var nama = ['Esha', 'Apria', 'Fitra', 'Sajaka'];
+// for(var i=0; i<nama.length; i++){
+// 	console.log(nama[i]);
+// }
+// nama.forEach(function(value,index){
+//    console.log('Mahasiswa No. ' + (index + 1) + ' Adalah ' + value);
+// });
 
 //10. map = mengembalikan array
 // var angka = [1,2,3,4,5,6,7,8];
@@ -55,13 +55,28 @@ nama.forEach(function(value,index){
 //  cetak(nama);
 
 //11. sort ==> untuk mengurutkan array
-var angkaAcak = [9, 5, 1, 3, 2, 4, 7, 8];
-angkaAcak.sort();
-console.log(angkaAcak.join(', '));
+// var angkaAcak = [9, 5, 1, 3, 2, 4, 7, 8];
+// angkaAcak.sort();
+// console.log(angkaAcak.join(', '));
 
 // jika ada puluhan
-var angkaAcak2 = [10, 20, 9, 5, 1, 3, 2, 4, 7, 8];
-angkaAcak2.sort(function(a,b){
-	return a - b;
+// var angkaAcak2 = [10, 20, 9, 5, 1, 3, 2, 4, 7, 8];
+// angkaAcak2.sort(function(a,b){
+// 	return a - b;
+// });
+// console.log(angkaAcak2.join(', '));
+
+//12. Filter ==> untuk menfilter value array dan membuat array baru
+var angka = [1,2,3,4,5,6,7,8];
+var angka2 = angka.filter(function(x) {
+	return x > 2;
 });
-console.log(angkaAcak2.join(', '));
+console.log(angka2.join(' , '));
+
+//13. Find ==> digunakan untuk mencari nilai, hanya menghasilkan satu nilai bukan nilai jadi tidak bisa menggunakan method join karena join digunakan untuk menggabungkan value array
+
+var angka = [1,2,3,4,5,6,7,8];
+var angka3 = angka.find(function(x) {
+	return x > 2;
+});
+console.log(angka3);
