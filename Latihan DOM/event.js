@@ -1,3 +1,5 @@
+// event handler ==> menimpa perubahan sebelumnya
+
 const p3 = document.querySelector('.p3');
 
 function ubahWarna(){
@@ -5,6 +7,9 @@ function ubahWarna(){
 } 
 
 p3.onclick = ubahWarna;
+
+
+// addEventListener ==> tidak menimpa perubahan sebelumnya, namun menambah
 
 const p4 = document.querySelector('#b p');
 p4.addEventListener('click',function(){
